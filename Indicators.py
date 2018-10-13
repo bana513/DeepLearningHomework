@@ -9,6 +9,6 @@ class Indicators:
         return np.average(sample_array[-N:] * volume_array[-N:]) / np.average(volume_array[-N:])
 
 
-    def SimpleMA(sample_array,N):
-        return pd.rolling(window=20).mean()
+    def SimpleMA(sample_array, N):
+        return pd.rolling(window=N).mean()
 
