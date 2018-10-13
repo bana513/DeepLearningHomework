@@ -10,5 +10,6 @@ class Indicators:
 
 
     def SimpleMA(sample_array, N):
-        return pd.rolling(window=N).mean()
+        data = pd.DataFrame(sample_array)
+        return data.rolling(window=N).mean()
 
