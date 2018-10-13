@@ -1,4 +1,5 @@
 import numpy as np
+import pandas as pd
 
 class Indicators:
     def __init__(self):
@@ -8,5 +9,6 @@ class Indicators:
         return np.average(sample_array[-N:] * volume_array[-N:]) / np.average(volume_array[-N:])
 
 
-
+    def SimpleMA(sample_array,N):
+        return pd.rolling(window=20).mean()
 
