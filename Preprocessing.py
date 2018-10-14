@@ -4,7 +4,7 @@ from matplotlib import pyplot as plt
 from sklearn.preprocessing import StandardScaler
 import pandas as pd
 
-df = pd.read_csv("poloniex_usdt_btc_20160101_DOHLCV_300.csv", sep=';')
+df = pd.read_csv("poloniex_usdt_btc_20170101_DOHLCV_300.csv", sep=';')
 print(df.head())
 #print(df['close'])
 
