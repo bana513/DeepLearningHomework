@@ -19,7 +19,7 @@ We are planning a neural network that can predict the price of a stock market el
 
 The features we use are the following: 
 * Raw OHLC values
-* Different averaged OHLV values in 5 minutes long interval 
+* Different averaged OHLC values in 5 minutes long interval 
 * Volume 
 
 
