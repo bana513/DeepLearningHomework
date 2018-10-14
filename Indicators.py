@@ -1,15 +1,9 @@
-import numpy as np
 import pandas as pd
 
-class Indicators:
-    def __init__(self):
+df = pd.read_csv("poloniex_usdt_btc_20170101_DOHLCV_300.csv", sep=';')
+sma = df.rolling(20).mean().values[:,4]
+df = df.assign(sma=sma)
+df. to_csv("poloniex_usdt_btc_20170101_DOHLCV_300_sma.csv", sep=";")
 
-
-    def VolumeWeightedMA(sample_array, volume_array, N):
-        return np.average(sample_array[-N:] * volume_array[-N:]) / np.average(volume_array[-N:])
-
-
-    def SimpleMA(sample_array, N):
-        data = pd.DataFrame(sample_array)
-        return data.rolling(window=N).mean()
+print(df)
 
