@@ -24,3 +24,8 @@ The features we use are the following:
 
 
 The dataset is since 2017-01-01T00:00:00+00:00 till 2018-10-14T20:00:00+00:00 because it contains enough information for the first sight and the trading volume is suitable.
+
+## Learning and Prediction
+Preprocess.ipynb is not necessary for this part yet.
+First run Learning.ipynb (Simplified version of Preprocess.ipynb because the input data was too complex to learn something userful with simple NN).
+Now you can tun Prediction.ipynb.
